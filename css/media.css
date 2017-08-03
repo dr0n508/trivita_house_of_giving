@@ -1,0 +1,86 @@
+.container {
+  margin: 0 auto;
+  overflow: hidden; }
+  @media only screen and (min-width: 1201px) {
+    .container {
+      width: 1200px; } }
+  @media only screen and (max-width: 1200px) {
+    .container {
+      width: 970px; } }
+  @media only screen and (max-width: 992px) {
+    .container {
+      width: 750px; } }
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 100%; } }
+
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 38px; }
+
+  .benefits {
+    margin-bottom: 40px; }
+    .benefits p {
+      font-size: 22px; }
+    .benefits ul li {
+      font-size: 18px; }
+
+  .wrapper-form .form-get-free .title-form {
+    font-size: 26px; }
+  .wrapper-form .form-get-free .describe-form {
+    font-size: 16px; }
+  .wrapper-form .form-get-free input, .wrapper-form .form-get-free select {
+    font-size: 16px; }
+  .wrapper-form .form-get-free .select select {
+    font-size: 16px; } }
+@media only screen and (max-width: 992px) {
+  .first-screen {
+    height: auto; }
+
+  h2 {
+    font-size: 30px; }
+
+  .benefits p {
+    font-size: 20px;
+    margin-bottom: 0; }
+  .benefits ul li {
+    font-size: 16px; }
+
+  .wrapper-form {
+    padding-left: 20px; }
+    .wrapper-form .form-get-free {
+      padding: 30px 40px 60px; } }
+@media only screen and (max-width: 768px) {
+  .first-screen {
+    padding-bottom: 60px; }
+
+  .main-content, .wrapper-form {
+    width: 100%; }
+
+  h1 {
+    text-align: center; }
+    h1 .logo {
+      padding: 20px 0; }
+
+  h2 {
+    text-align: center;
+    font-size: 23px; }
+
+  .wrapper-form {
+    background-color: rgba(255, 255, 255, 0.71);
+    padding: 20px 0 30px 0; }
+    .wrapper-form .form-get-free {
+      background: transparent;
+      border-radius: 0;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px; }
+      .wrapper-form .form-get-free .title-form {
+        font-size: 23px; }
+      .wrapper-form .form-get-free .describe-form {
+        color: white; }
+      .wrapper-form .form-get-free .submit-btn {
+        width: 100%; } }
+
+/*# sourceMappingURL=media.css.map */
