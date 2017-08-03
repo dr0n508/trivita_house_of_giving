@@ -14,4 +14,22 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
+header, footer {
+  background-color: #91c449; }
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  header nav ul li a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none; }
+
+.welcome {
+  background: url("../img/bg-first-screen.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  color: white;
+  padding: 50px 0 200px; }
+
 /*# sourceMappingURL=main.css.map */
