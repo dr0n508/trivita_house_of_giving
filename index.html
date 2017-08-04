@@ -51,7 +51,7 @@
                     enjoy the pleasures healthy recreation provides. But we need your help to make those things happen for the children
                     of Pambara, Mozambique.</p>
             </div>
-            <div class="col-small">
+            <div class="col-small text-center">
                 <img src="img/field-of-dreams.jpg" alt="field of dreams project">
             </div>
         </div>
@@ -59,14 +59,15 @@
 </section>
 <section class="how-to-give">
     <div class="container">
-        <h2>How <span>to</span> give</h2>
-        <p class="sub-title">Simply click on the “Donate Now” button below
-            to make your tax-deductible donation. </p>
-        <p class="slogan-section blue-text">No amount is too small—or for that matter too large!</p>
-        <p>Thank you for your time and your generosity in support of our Field of Dreams.</p>
-        <p class="green-text">100% of donations received go directly to the projects you support!</p>
-        <a href="#" class="btn">Donate Now</a>
-        <img src="img/wide-image.jpg" alt="how to give">
+        <div class="row">
+            <h2>How <span>to</span> give</h2>
+            <p class="sub-title">Simply click on the “Donate Now” button below
+                to make your tax-deductible donation. </p>
+            <p class="slogan-section blue-text">No amount is too small—or for that matter too large!</p>
+            <p>Thank you for your time and your generosity in support of our Field of Dreams.</p>
+            <p class="green-text">100% of donations received go directly to the projects you support!</p>
+            <a href="#" class="btn">Donate Now</a>
+        </div>
     </div>
 </section>
 
@@ -93,7 +94,7 @@
                     to infection; they are more likely to die from common childhood ailments like diarrhea diseases and respiratory
                     infections.</p>
             </div>
-            <div class="col-small">
+            <div class="col-small text-center">
                 <img src="img/about-image.jpg" alt="about house of giving">
             </div>
         </div>
@@ -145,22 +146,35 @@
 
 <section class="how-to-give">
     <div class="container">
-        <h2>How <span>to</span> give</h2>
-        <p class="sub-title">Simply click on the “Donate Now” button below
-            to make your tax-deductible donation. </p>
-        <p class="slogan-section blue-text">No amount is too small—or for that matter too large!</p>
-        <p>Thank you for your time and your generosity in support of our Field of Dreams.</p>
-        <p class="green-text">100% of donations received go directly to the projects you support!</p>
-        <a href="#" class="btn">Donate Now</a>
+        <div class="row">
+            <h2>How <span>to</span> give</h2>
+            <p class="sub-title">Simply click on the “Donate Now” button below
+                to make your tax-deductible donation. </p>
+            <p class="slogan-section blue-text">No amount is too small—or for that matter too large!</p>
+            <p>Thank you for your time and your generosity in support of our Field of Dreams.</p>
+            <p class="green-text">100% of donations received go directly to the projects you support!</p>
+            <a href="#" class="btn">Donate Now</a>
+        </div>
     </div>
 </section>
 
 <footer>
     <div class="container">
-        <a href="#" class="btn-up"></a>
+        <a href="#" class="btn-up" onclick="return up()"></a>
         <a href="#"><img src="img/logo-trivita.png" alt="logo Trivita"></a>
     </div>
 </footer>
+
+<script>
+    var t;
+    function up() {
+        var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+        if(top > 0) {
+            window.scrollBy(0,-150);
+            t = setTimeout('up()',20);
+        } else clearTimeout(t);
+        return false;    }
+</script>
 
 </body>
 </html>

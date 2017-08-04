@@ -18,6 +18,12 @@ body {
 header, footer {
   background-color: #91c449;
   padding: 20px 0; }
+  @media only screen and (max-width: 768px) {
+    header, footer {
+      padding: 10px 0; }
+      header img, footer img {
+        width: 80px;
+        height: auto; } }
 
 .bold {
   font-weight: 600; }
@@ -31,31 +37,59 @@ header, footer {
 .blue-text {
   color: #769cce; }
 
-.container {
+.text-center {
+  text-align: center; }
+
+.container .row {
+  padding: 0 10px;
   overflow: hidden; }
-  .container .row {
-    overflow: hidden; }
-  .container .col-big {
-    width: 57%;
-    float: left;
-    padding: 20px 30px 20px 0; }
-  .container .col-small {
-    width: 43%;
-    float: left; }
-    .container .col-small img {
-      width: 100%;
-      height: auto; }
+.container .col-big {
+  width: 57%;
+  float: left;
+  padding: 20px 30px 20px 0; }
+.container .col-small {
+  width: 43%;
+  float: left; }
+  .container .col-small img {
+    width: 100%;
+    height: auto; }
+    @media only screen and (max-width: 992px) {
+      .container .col-small img {
+        max-width: 50%; } }
+    @media only screen and (max-width: 768px) {
+      .container .col-small img {
+        max-width: 65%; } }
+    @media only screen and (max-width: 450px) {
+      .container .col-small img {
+        max-width: 95%; } }
 
 .header-h2 {
   color: #769cce;
-  font-size: 4.15em;
+  font-size: 58px;
   line-height: 1;
   margin-bottom: 25px; }
   .header-h2 span {
     display: block;
     color: #636363;
-    font-size: .55em;
+    font-size: 31px;
     text-transform: uppercase; }
+  @media only screen and (max-width: 1200px) {
+    .header-h2 {
+      font-size: 48px;
+      margin-bottom: 15px; }
+      .header-h2 span {
+        font-size: 26px; } }
+  @media only screen and (max-width: 992px) {
+    .header-h2 {
+      font-size: 40px;
+      margin-bottom: 10px; }
+      .header-h2 span {
+        font-size: 22px; } }
+  @media only screen and (max-width: 450px) {
+    .header-h2 {
+      font-size: 32px; }
+      .header-h2 span {
+        font-size: 18px; } }
 
 .btn {
   background: #91c449;
@@ -68,6 +102,12 @@ header, footer {
   display: inline-block; }
   .btn:hover {
     background: #82b74b; }
+  @media only screen and (max-width: 1200px) {
+    .btn {
+      font-size: 36px; } }
+  @media only screen and (max-width: 768px) {
+    .btn {
+      font-size: 20px; } }
 
 header nav ul {
   display: flex;
@@ -77,7 +117,10 @@ header nav ul {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-    font-size: 1.2em; }
+    font-size: 17px; }
+    @media only screen and (max-width: 768px) {
+      header nav ul li a {
+        font-size: 14px; } }
     header nav ul li a:hover {
       text-decoration: underline; }
 
@@ -86,12 +129,25 @@ header nav ul {
   background-size: cover;
   color: white;
   padding: 5% 39% 10% 7%; }
-.welcome h1 {
-  font-size: 3em;
-  font-style: italic; }
-  .welcome h1 span {
-    display: block;
-    margin-bottom: 30px; }
+  .welcome .container h1 {
+    font-size: 41px;
+    font-style: italic; }
+    .welcome .container h1 span {
+      display: block;
+      margin-bottom: 30px; }
+  @media only screen and (max-width: 992px) {
+    .welcome .container {
+      padding: 5% 20% 10% 7%; } }
+  @media only screen and (max-width: 768px) {
+    .welcome .container h1 {
+      font-size: 30px; }
+      .welcome .container h1 span {
+        margin-bottom: 20px; } }
+  @media only screen and (max-width: 450px) {
+    .welcome .container {
+      padding: 5%; }
+      .welcome .container h1 {
+        font-size: 28px; } }
 
 .about-project {
   padding: 30px 0; }
@@ -99,6 +155,9 @@ header nav ul {
     line-height: 26px;
     margin-bottom: 15px;
     color: black; }
+    @media only screen and (max-width: 1200px) {
+      .about-project p {
+        line-height: 20px; } }
 
 .about {
   padding-top: 30px; }
@@ -108,10 +167,16 @@ header nav ul {
     margin-bottom: 40px; }
     .about article .header-h2 {
       margin-bottom: 0; }
+    @media only screen and (max-width: 992px) {
+      .about article {
+        margin-bottom: 20px; } }
   .about p {
     color: black;
     line-height: 26px;
     margin-bottom: 15px; }
+    @media only screen and (max-width: 1200px) {
+      .about p {
+        line-height: 20px; } }
   .about .big-italic-text {
     font-size: 28px;
     font-style: italic;
@@ -119,6 +184,18 @@ header nav ul {
     text-align: right;
     color: #636363;
     line-height: 1.6; }
+    @media only screen and (max-width: 1200px) {
+      .about .big-italic-text {
+        font-size: 24px; } }
+    @media only screen and (max-width: 992px) {
+      .about .big-italic-text {
+        text-align: center; } }
+    @media only screen and (max-width: 768px) {
+      .about .big-italic-text {
+        font-size: 20px; } }
+    @media only screen and (max-width: 450px) {
+      .about .big-italic-text {
+        font-size: 18px; } }
   .about .contacts {
     text-align: center; }
     .about .contacts h3 {
@@ -135,6 +212,9 @@ header nav ul {
     .about .contacts .link-email {
       color: black;
       text-decoration: none; }
+  @media only screen and (max-width: 768px) {
+    .about .row {
+      margin-bottom: 25px; } }
 
 .how-to-give {
   padding: 50px 0;
@@ -144,7 +224,8 @@ header nav ul {
     color: #769cce;
     text-transform: uppercase;
     position: relative;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     .how-to-give h2:before, .how-to-give h2:after {
       content: "";
       position: absolute;
@@ -176,6 +257,36 @@ header nav ul {
   .how-to-give img {
     width: 100%;
     height: auto; }
+  @media only screen and (max-width: 1200px) {
+    .how-to-give h2 {
+      font-size: 48px; }
+      .how-to-give h2 span {
+        font-size: 28px; }
+    .how-to-give p {
+      font-size: 20px; }
+    .how-to-give .slogan-section {
+      font-size: 24px; } }
+  @media only screen and (max-width: 992px) {
+    .how-to-give h2 {
+      font-size: 38px; }
+      .how-to-give h2 span {
+        font-size: 22px; }
+    .how-to-give p {
+      font-size: 18px; }
+    .how-to-give .sub-title {
+      max-width: 80%; }
+    .how-to-give .slogan-section {
+      font-size: 22px; } }
+  @media only screen and (max-width: 768px) {
+    .how-to-give {
+      padding: 20px 0; } }
+  @media only screen and (max-width: 450px) {
+    .how-to-give h2 {
+      font-size: 32px; }
+    .how-to-give p {
+      font-size: 16px; }
+    .how-to-give .slogan-section {
+      font-size: 18px; } }
 
 .thumb-wrap {
   position: relative;
@@ -192,21 +303,24 @@ header nav ul {
   width: 100%;
   height: 100%; }
 
-.btn-up {
-  width: 34px;
-  height: 40px;
-  display: inline-block;
-  background: url("../img/icon-up.png") 50% 50% no-repeat;
-  background-size: cover; }
-
 footer {
   text-align: center; }
   footer .container {
     position: relative; }
   footer .btn-up {
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 50%;
-    margin-top: -20px; }
+    margin-top: -20px;
+    width: 34px;
+    height: 40px;
+    display: inline-block;
+    background: url("../img/icon-up.png") 50% 50% no-repeat;
+    background-size: cover; }
+    @media only screen and (max-width: 768px) {
+      footer .btn-up {
+        width: 21px;
+        height: 25px;
+        margin-top: -12px; } }
 
 /*# sourceMappingURL=main.css.map */
