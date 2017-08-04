@@ -241,7 +241,9 @@ header nav ul {
       margin-right: -100%; }
     .how-to-give h2 span {
       font-size: 34px;
-      color: #91c449; }
+      color: #91c449;
+      position: relative;
+      top: -0.2em; }
   .how-to-give .slogan-section {
     text-transform: uppercase;
     font-size: 27px;
