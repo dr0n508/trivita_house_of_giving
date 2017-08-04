@@ -24,14 +24,13 @@ body {
   -moz-box-sizing: border-box;
 }
 
-
 header, footer {
   background-color: $green-color;
   padding: 20px 0;
   @media only screen and (max-width: 768px) {
     padding: 10px 0;
     img {
-      width: 80px;
+      width: 90px;
       height: auto;
     }
   }
@@ -63,15 +62,9 @@ header, footer {
     img {
       width: 100%;
       height: auto;
-      @media only screen and (max-width: 992px) {
-        max-width: 50%;
-      }
-      @media only screen and (max-width: 768px) {
-        max-width: 65%;
-      }
-      @media only screen and (max-width: 450px) {
-        max-width: 95%;
-      }
+      @media only screen and (max-width: 992px) { max-width: 50%; }
+      @media only screen and (max-width: 768px) { max-width: 65%; }
+      @media only screen and (max-width: 450px) { max-width: 95%; }
     }
   }
 }
@@ -112,15 +105,9 @@ header, footer {
   color: white;
   text-decoration: none;
   display: inline-block;
-  &:hover {
-    background: #82b74b;
-  }
-  @media only screen and (max-width: 1200px) {
-    font-size: 36px;
-  }
-  @media only screen and (max-width: 768px) {
-    font-size: 20px;
-  }
+  &:hover { background: #82b74b; }
+  @media only screen and (max-width: 1200px) { font-size: 36px; }
+  @media only screen and (max-width: 768px) { font-size: 20px; }
 }
 
 header {
@@ -133,15 +120,10 @@ header {
       color: white;
       text-decoration: none;
       font-size: 17px;
-      @media only screen and (max-width: 768px) {
-        font-size: 14px;
-      }
-      &:hover {
-        text-decoration: underline;
-      }
+      &:hover { text-decoration: underline; }
+      @media only screen and (max-width: 768px) { font-size: 14px; }
     }
   }
-
 }
 
 .welcome {
@@ -158,15 +140,11 @@ header {
         margin-bottom: 30px;
       }
     }
-    @media only screen and (max-width: 992px) {
-      padding: 5% 20% 10% 7%;
-    }
+    @media only screen and (max-width: 992px) { padding: 5% 20% 10% 7%; }
     @media only screen and (max-width: 768px) {
       h1 {
         font-size: 30px;
-        span {
-          margin-bottom: 20px;
-        }
+        span { margin-bottom: 20px; }
       }
     }
     @media only screen and (max-width: 450px) {
@@ -190,25 +168,19 @@ header {
 
 .about {
   padding-top: 30px;
-  .row {
-    margin-bottom: 40px;
-  }
+  .row { margin-bottom: 40px; }
   article {
     margin-bottom: 40px;
     .header-h2 {
       margin-bottom: 0;
     }
-    @media only screen and (max-width: 992px) {
-      margin-bottom: 20px;
-    }
+    @media only screen and (max-width: 992px) { margin-bottom: 20px; }
   }
   p {
     color: $text-color;
     line-height: 26px;
     margin-bottom: 15px;
-    @media only screen and (max-width: 1200px) {
-      line-height: 20px;
-    }
+    @media only screen and (max-width: 1200px) { line-height: 20px; }
   }
   .big-italic-text {
     font-size: 28px;
@@ -252,9 +224,7 @@ header {
     }
   }
   @media only screen and (max-width: 768px) {
-    .row {
-      margin-bottom: 25px;
-    }
+    .row { margin-bottom: 25px; }
   }
 }
 
@@ -308,30 +278,18 @@ header {
     h2 { font-size: 48px;
       span { font-size: 28px; }
     }
-    p {
-      font-size: 20px;
-    }
-    .slogan-section {
-      font-size: 24px;
-    }
+    p { font-size: 20px; }
+    .slogan-section { font-size: 24px; }
   }
   @media only screen and (max-width: 992px) {
     h2 { font-size: 38px;
       span { font-size: 22px; }
     }
-    p {
-      font-size: 18px;
-    }
-    .sub-title {
-      max-width: 80%;
-    }
-    .slogan-section {
-      font-size: 22px;
-    }
+    p { font-size: 18px; }
+    .sub-title { max-width: 80%; }
+    .slogan-section { font-size: 22px; }
   }
-  @media only screen and (max-width: 768px) {
-    padding: 20px 0;
-  }
+  @media only screen and (max-width: 768px) { padding: 20px 0; }
   @media only screen and (max-width: 450px) {
     h2 { font-size: 32px}
     p { font-size: 16px}
@@ -358,9 +316,7 @@ header {
 
 footer {
   text-align: center;
-  .container {
-    position: relative;
-  }
+  .container { position: relative; }
   .btn-up {
     position: absolute;
     left: 10px;

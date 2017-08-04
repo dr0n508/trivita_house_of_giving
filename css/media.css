@@ -24,13 +24,11 @@
   .container .col-big {
     width: 100%;
     padding: 0 0 20px 0; }
-  .container .col-small {
+
+  .col-small {
     width: 100%; } }
 @media only screen and (max-width: 768px) {
   .container .col-big {
-    width: 100%;
-    padding: 0; }
-  .container .col-small {
-    width: 100%; } }
+    padding: 0; } }
 
 /*# sourceMappingURL=media.css.map */
