@@ -128,21 +128,25 @@ header nav ul {
   background: url("../img/bg-first-screen.jpg") no-repeat 50% 50%;
   background-size: cover;
   color: white;
-  padding: 5% 39% 10% 7%; }
+  padding: 50px 50px 200px 120px; }
   .welcome .container h1 {
     font-size: 41px;
-    font-style: italic; }
+    font-style: italic;
+    width: 450px; }
     .welcome .container h1 span {
       display: block;
       margin-bottom: 30px; }
   @media only screen and (max-width: 992px) {
     .welcome .container {
-      padding: 5% 20% 10% 7%; } }
+      padding: 50px 50px 200px 80px; } }
   @media only screen and (max-width: 768px) {
-    .welcome .container h1 {
-      font-size: 30px; }
-      .welcome .container h1 span {
-        margin-bottom: 20px; } }
+    .welcome .container {
+      padding: 50px 50px 100px 50px; }
+      .welcome .container h1 {
+        width: 100%;
+        font-size: 30px; }
+        .welcome .container h1 span {
+          margin-bottom: 20px; } }
   @media only screen and (max-width: 450px) {
     .welcome .container {
       padding: 5%; }
